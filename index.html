@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+
+    <style>
+        table{
+            width: 80%;
+            border-collapse: collapse;
+        }
+        th,td{
+            padding: 10px;
+            border: 1px solid #fff;
+        }
+        tr{
+            height: 50px;
+        }
+       tr:nth-child(even){
+        background-color: #e4e1e1;
+       }
+       th{
+        background-color: #3e9f3d;
+        color: #fff;
+       }
+       .details > th{
+        text-align: left;
+        
+       }
+       
+    </style>
+</head>
+<body>
+   
+    <table>
+        <tr>
+            <th style="width: 20%;">Product</th>
+            <th style="width: 50%;" colspan="2">Features & Pricing</th>
+            <th style="width: 10%;">Rating</th>
+            <th style="width: 20%;">Stock Status</th>
+        </tr>
+        <tr class="details">
+           <th>Apple iPhone 14</th>
+           <td colspan="2">A15 Bionic Chip 128GB Storage</td>
+           <td>4.8</td>
+           <td>In Stock</td>
+        </tr>
+        <tr class="details">
+           <th>Samsung Galaxy S23</th>
+           <td>Snapdragon 8 Gen 2</td>
+           <td>$999</td>
+           <td>4.6</td>
+           <td>Out of Stock</td>
+           
+        </tr>
+        <tr class="details">
+            <th>Google Pixel 8</th>
+            <td rowspan="2">Google Tensor G2, 256GB Storage</td>
+            <td rowspan="2">$899</td>
+            <td>4.5</td>
+            <td>Available</td>
+            
+        </tr>
+        <tr class="details">
+            <th>OnePlus 11 </th>
+            <td>4.4</td>
+            <td>Pre-Order</td>
+           
+        </tr>
+        
+    </table>
+</body>
+</html>
